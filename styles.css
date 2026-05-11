@@ -114,6 +114,10 @@ h1 {
   letter-spacing: 0;
 }
 
+.product-accent {
+  color: #ff3f87;
+}
+
 .hero-lede {
   max-width: 620px;
   color: var(--muted);
