@@ -1339,8 +1339,9 @@ body {
 @media (max-width: 680px) {
   html,
   body {
-    height: 100%;
-    overflow: hidden;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 
   .nav {
@@ -1352,25 +1353,25 @@ body {
   }
 
   .one-page {
-    height: calc(100vh - 58px);
-    min-height: 0;
-    overflow: hidden;
+    min-height: calc(100svh - 58px);
+    height: auto;
+    overflow: visible;
   }
 
   .one-page-shell {
     width: min(100% - 22px, 1180px);
-    height: 100%;
+    height: auto;
     min-height: 0;
-    padding: 10px 0;
+    padding: 10px 0 max(16px, env(safe-area-inset-bottom));
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 118px;
-    grid-template-rows: auto 126px minmax(0, 1fr);
-    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 12px;
     align-items: stretch;
   }
 
   .one-page .hero-copy {
-    grid-column: 1 / span 2;
+    grid-column: 1;
   }
 
   .one-page .eyebrow {
@@ -1381,7 +1382,7 @@ body {
   .one-page .hero-title {
     max-width: 100%;
     margin-bottom: 12px;
-    font-size: clamp(2.1rem, 10.6vw, 2.75rem);
+    font-size: clamp(1.92rem, 9.7vw, 2.5rem);
     line-height: 0.92;
   }
 
@@ -1406,13 +1407,17 @@ body {
   }
 
   .one-page .hero-visual {
-    grid-column: 2;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 118px;
     grid-row: 2;
+    gap: 10px;
+    align-items: center;
     min-height: 0;
     padding: 0;
   }
 
   .one-page .screenshot-stage {
+    grid-column: 2;
     width: 118px;
     height: 126px;
     margin: 0;
@@ -1446,7 +1451,7 @@ body {
 
   .compact-card {
     grid-column: 1;
-    grid-row: 2;
+    grid-row: auto;
     position: static;
     width: 100%;
     padding: 13px;
@@ -1472,9 +1477,9 @@ body {
   }
 
   .apps-panel {
-    grid-column: 1 / span 2;
+    grid-column: 1;
     grid-row: 3;
-    min-height: 0;
+    min-height: auto;
     padding: 12px;
     border-radius: 22px;
   }
@@ -1525,7 +1530,45 @@ body {
   }
 
   .compact-orbit .download-link {
-    display: none;
+    display: inline-flex;
+    min-height: 34px;
+    margin-top: 8px;
+    width: 100%;
+    font-size: 0.78rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .one-page-shell {
+    width: min(100% - 18px, 1180px);
+  }
+
+  .one-page .hero-visual {
+    grid-template-columns: minmax(0, 1fr) 104px;
+  }
+
+  .one-page .hero-title {
+    font-size: clamp(1.82rem, 9.6vw, 2.35rem);
+  }
+
+  .one-page .hero-lede {
+    font-size: 0.78rem;
+  }
+
+  .one-page .screenshot-stage {
+    width: 104px;
+  }
+
+  .one-page .shot-primary {
+    width: 64px;
+  }
+
+  .one-page .shot-secondary {
+    width: 52px;
+  }
+
+  .one-page .hero-app-icon {
+    right: 62px;
   }
 }
 
