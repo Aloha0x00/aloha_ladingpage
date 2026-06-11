@@ -1,0 +1,39 @@
+{
+  "name": "Diary with lock",
+  "short_name": "Diary Lock",
+  "description": "Private diary, journal, and notes app for iPhone with password lock, personal styles, and cloud sync.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff3f87",
+  "icons": [
+    {
+      "src": "/assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Download Diary with lock",
+      "short_name": "Download",
+      "description": "Open Diary with lock on the App Store.",
+      "url": "https://apps.apple.com/us/app/diary-with-lock/id1347511716",
+      "icons": [
+        {
+          "src": "/assets/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}
