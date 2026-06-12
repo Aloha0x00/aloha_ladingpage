@@ -85,6 +85,8 @@
             <a
               class="button primary"
               href="https://apps.apple.com/us/app/diary-with-lock/id1347511716"
+              data-analytics-event="view_app_store_click"
+              data-analytics-label="hero_view_app_store"
               rel="noopener"
               target="_blank"
             >
@@ -132,6 +134,8 @@
             <a
               class="more-link"
               href="https://apps.apple.com/us/developer/tuyen-bui/id1000285801"
+              data-analytics-event="developer_apps_click"
+              data-analytics-label="view_all_apps"
               rel="noopener"
               target="_blank"
             >
@@ -152,6 +156,8 @@
               <a
                 class="download-link"
                 href="https://apps.apple.com/us/app/diary-with-lock/id1347511716"
+                data-analytics-event="app_download_click"
+                data-analytics-label="diary_with_lock"
                 rel="noopener"
                 target="_blank"
               >
@@ -170,6 +176,8 @@
               <a
                 class="download-link"
                 href="https://apps.apple.com/us/app/kpop-wallpapers-4k-themes-hd/id1265184476"
+                data-analytics-event="app_download_click"
+                data-analytics-label="kpop_wallpaper_hd"
                 rel="noopener"
                 target="_blank"
               >
@@ -188,6 +196,8 @@
               <a
                 class="download-link"
                 href="https://apps.apple.com/us/app/notepad-notebook-onenote-plus/id1375277434"
+                data-analytics-event="app_download_click"
+                data-analytics-label="notepad"
                 rel="noopener"
                 target="_blank"
               >
@@ -198,5 +208,32 @@
         </section>
       </section>
     </main>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
+      import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-analytics.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyCVL1zQ7c2r3Idg641a_cIBkoCn60pmb9w",
+        authDomain: "diary-with-lock---landing-page.firebaseapp.com",
+        projectId: "diary-with-lock---landing-page",
+        storageBucket: "diary-with-lock---landing-page.firebasestorage.app",
+        messagingSenderId: "463928977714",
+        appId: "1:463928977714:web:f06d138b5fa6ed2bec0f2b",
+        measurementId: "G-GSY1FBNLVP"
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+
+      document.querySelectorAll("[data-analytics-event]").forEach((link) => {
+        link.addEventListener("click", () => {
+          logEvent(analytics, link.dataset.analyticsEvent, {
+            link_text: link.textContent.trim(),
+            link_url: link.href,
+            item_name: link.dataset.analyticsLabel
+          });
+        });
+      });
+    </script>
   </body>
 </html>
