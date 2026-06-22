@@ -69,6 +69,10 @@
         <a class="brand" href="#top" aria-label="Diary with lock home">
           <img src="assets/diary-icon.jpg" alt="Diary with lock" />
         </a>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <span class="theme-toggle-icon" aria-hidden="true"></span>
+          <span class="theme-toggle-text">Dark</span>
+        </button>
       </nav>
     </header>
 
@@ -221,6 +225,30 @@
         appId: "1:463928977714:web:f06d138b5fa6ed2bec0f2b",
         measurementId: "G-GSY1FBNLVP"
       };
+
+      const themeToggle = document.querySelector(".theme-toggle");
+      const themeToggleText = document.querySelector(".theme-toggle-text");
+      const themeColor = document.querySelector('meta[name="theme-color"]');
+      const savedTheme = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
+
+      const applyTheme = (theme) => {
+        const isDark = theme === "dark";
+        document.documentElement.dataset.theme = theme;
+        themeToggle.setAttribute("aria-pressed", String(isDark));
+        themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+        themeToggleText.textContent = isDark ? "Light" : "Dark";
+        themeColor.setAttribute("content", isDark ? "#171524" : "#ff3f87");
+      };
+
+      applyTheme(initialTheme);
+
+      themeToggle.addEventListener("click", () => {
+        const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+        localStorage.setItem("theme", nextTheme);
+        applyTheme(nextTheme);
+      });
 
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
