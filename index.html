@@ -91,6 +91,8 @@
               href="https://apps.apple.com/us/app/diary-with-lock/id1347511716"
               data-analytics-event="view_app_store_click"
               data-analytics-label="hero_view_app_store"
+              data-analytics-app="Diary with lock"
+              data-analytics-placement="hero"
               rel="noopener"
               target="_blank"
             >
@@ -162,6 +164,8 @@
                 href="https://apps.apple.com/us/app/diary-with-lock/id1347511716"
                 data-analytics-event="app_download_click"
                 data-analytics-label="diary_with_lock"
+                data-analytics-app="Diary with lock"
+                data-analytics-placement="apps_panel"
                 rel="noopener"
                 target="_blank"
               >
@@ -182,6 +186,8 @@
                 href="https://apps.apple.com/us/app/kpop-wallpapers-4k-themes-hd/id1265184476"
                 data-analytics-event="app_download_click"
                 data-analytics-label="kpop_wallpaper_hd"
+                data-analytics-app="KPop Wallpaper HD"
+                data-analytics-placement="apps_panel"
                 rel="noopener"
                 target="_blank"
               >
@@ -202,6 +208,8 @@
                 href="https://apps.apple.com/us/app/notepad-notebook-onenote-plus/id1375277434"
                 data-analytics-event="app_download_click"
                 data-analytics-label="notepad"
+                data-analytics-app="Notepad"
+                data-analytics-placement="apps_panel"
                 rel="noopener"
                 target="_blank"
               >
@@ -258,7 +266,9 @@
           logEvent(analytics, link.dataset.analyticsEvent, {
             link_text: link.textContent.trim(),
             link_url: link.href,
-            item_name: link.dataset.analyticsLabel
+            item_name: link.dataset.analyticsLabel,
+            app_name: link.dataset.analyticsApp,
+            placement: link.dataset.analyticsPlacement
           });
         });
       });
