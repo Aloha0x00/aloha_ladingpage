@@ -1005,17 +1005,30 @@ h1 {
   }
 
   .header-actions {
+    width: 100%;
+    justify-content: flex-end;
     align-items: center;
     gap: 10px;
   }
 
   .language-switcher {
-    flex: 1 1 0;
+    flex: 0 0 auto;
     min-width: 0;
+    max-width: min(56vw, 190px);
+    min-height: 38px;
+    padding: 0 10px;
   }
 
   .language-switcher-label {
     display: none;
+  }
+
+  .language-switcher select {
+    width: auto;
+    max-width: 100%;
+    font-size: 0.82rem;
+    text-align: right;
+    text-align-last: right;
   }
 
   .brand img {
