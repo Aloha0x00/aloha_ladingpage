@@ -1014,6 +1014,10 @@ h1 {
     min-width: 0;
   }
 
+  .language-switcher-label {
+    display: none;
+  }
+
   .brand img {
     height: 52px;
   }
@@ -1982,19 +1986,19 @@ body {
 
   .one-page .hero-visual {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 118px;
+    grid-template-columns: 1fr;
     grid-row: 2;
-    gap: 10px;
+    gap: 12px;
     align-items: center;
     min-height: 0;
     padding: 0;
   }
 
   .one-page .screenshot-stage {
-    grid-column: 2;
-    width: 118px;
-    height: 126px;
-    margin: 0;
+    grid-column: 1;
+    width: min(186px, 100%);
+    height: 198px;
+    margin: 0 auto;
   }
 
   .one-page .screen-shot {
@@ -2003,22 +2007,22 @@ body {
   }
 
   .one-page .shot-primary {
-    width: 72px;
-    right: 8px;
+    width: 114px;
+    right: 10px;
     top: 0;
   }
 
   .one-page .shot-secondary {
-    width: 58px;
-    left: 4px;
+    width: 90px;
+    left: 8px;
     bottom: 0;
   }
 
   .one-page .hero-app-icon {
-    right: 72px;
-    top: 8px;
-    width: 34px;
-    height: 34px;
+    right: 108px;
+    top: 16px;
+    width: 46px;
+    height: 46px;
     border-width: 3px;
     border-radius: 10px;
   }
@@ -2164,15 +2168,25 @@ body {
     width: 100%;
     font-size: 0.78rem;
   }
+
+  .promo-spotlight {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 4 / 5;
+    min-height: 0;
+  }
+
+  .promo-spotlight img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
 }
 
 @media (max-width: 390px) {
   .one-page-shell {
     width: min(100% - 18px, 1180px);
-  }
-
-  .one-page .hero-visual {
-    grid-template-columns: minmax(0, 1fr) 104px;
   }
 
   .one-page .hero-title {
@@ -2184,19 +2198,22 @@ body {
   }
 
   .one-page .screenshot-stage {
-    width: 104px;
+    width: min(164px, 100%);
+    height: 176px;
   }
 
   .one-page .shot-primary {
-    width: 64px;
+    width: 98px;
   }
 
   .one-page .shot-secondary {
-    width: 52px;
+    width: 78px;
   }
 
   .one-page .hero-app-icon {
-    right: 62px;
+    right: 94px;
+    width: 40px;
+    height: 40px;
   }
 }
 
