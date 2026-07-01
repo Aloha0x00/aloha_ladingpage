@@ -157,6 +157,18 @@
             >
               Use it NOW
             </a>
+            <button
+              id="share-app-hero"
+              class="button secondary share-button share-button-hero"
+              type="button"
+              data-analytics-event="share_app_click"
+              data-analytics-label="hero_share_app"
+              data-analytics-app="Diary with lock"
+              data-analytics-placement="hero"
+              data-i18n="shareAppButton"
+            >
+              <span class="share-button-label">Share app</span>
+            </button>
           </div>
         </div>
 
@@ -378,6 +390,28 @@
           </div>
         </div>
       </section>
+
+      <section class="share-footer" aria-labelledby="share-title">
+        <div class="share-footer-inner">
+          <div class="share-footer-copy">
+            <p class="eyebrow" data-i18n="shareAppEyebrow">Share Diary with lock</p>
+            <h2 id="share-title" data-i18n="shareAppTitle">Know someone who needs a private journal?</h2>
+            <p data-i18n="shareAppBody">Send them the App Store link in one tap.</p>
+          </div>
+          <button
+            id="share-app-footer"
+            class="button primary share-button share-button-footer"
+            type="button"
+            data-analytics-event="share_app_click"
+            data-analytics-label="footer_share_app"
+            data-analytics-app="Diary with lock"
+            data-analytics-placement="footer"
+            data-i18n="shareAppButton"
+          >
+            <span class="share-button-label">Share app</span>
+          </button>
+        </div>
+      </section>
     </main>
     <script type="module">
       import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
@@ -445,6 +479,11 @@
           review3Body: "I started on my phone and loved that my entries followed me across devices. That turned it from a casual diary into something I actually trust for daily memories.",
           review4Title: "Simple enough to keep the habit going",
           review4Body: "Most journaling apps lose me after a week. This one keeps the friction low, feels private, and gives me a clean place to track what happened and how I felt.",
+          shareAppEyebrow: "Share Diary with lock",
+          shareAppTitle: "Know someone who needs a private journal?",
+          shareAppBody: "Send them the App Store link in one tap.",
+          shareAppButton: "Share app",
+          shareAppSuccess: "Link copied",
           countryUSA: "USA",
           countryKorea: "Korea",
           countryGermany: "Germany",
@@ -487,6 +526,11 @@
           review3Body: "我一开始在手机上用，后来发现内容能跟着我同步到其他设备。这让它从随手写写变成了我真正信任的日常记录工具。",
           review4Title: "足够简单，习惯才会留下来",
           review4Body: "很多日记应用我用一周就放弃了。这个应用阻力很低，感觉私密，也让我能清楚记录发生了什么以及自己的感受。",
+          shareAppEyebrow: "分享 Diary with lock",
+          shareAppTitle: "你认识需要私密日记的人吗？",
+          shareAppBody: "一键把 App Store 链接发给他们。",
+          shareAppButton: "分享应用",
+          shareAppSuccess: "链接已复制",
           countryUSA: "美国",
           countryKorea: "韩国",
           countryGermany: "德国",
@@ -529,6 +573,11 @@
           review3Body: "मैंने इसे फोन पर शुरू किया और अच्छा लगा कि मेरी एंट्रियाँ दूसरे डिवाइसों पर भी मिल जाती हैं। इससे यह एक कैज़ुअल डायरी से भरोसेमंद रोज़ाना यादों की जगह बन गया।",
           review4Title: "इतना आसान कि आदत बनी रहे",
           review4Body: "ज़्यादातर जर्नलिंग ऐप मैं एक हफ्ते में छोड़ देती हूँ। यह ऐप सरल, निजी और साफ़ तरीके से मुझे दिन और भावनाएँ ट्रैक करने देता है।",
+          shareAppEyebrow: "Diary with lock साझा करें",
+          shareAppTitle: "क्या आप किसी ऐसे व्यक्ति को जानते हैं जिसे निजी जर्नल चाहिए?",
+          shareAppBody: "उन्हें एक टैप में App Store लिंक भेजें।",
+          shareAppButton: "ऐप शेयर करें",
+          shareAppSuccess: "लिंक कॉपी हो गया",
           countryUSA: "अमेरिका",
           countryKorea: "कोरिया",
           countryGermany: "जर्मनी",
@@ -571,6 +620,11 @@
           review3Body: "Empecé en el teléfono y me encantó que mis entradas me siguieran en otros dispositivos. Eso la convirtió en una herramienta diaria en la que realmente confío.",
           review4Title: "Lo bastante simple para mantener el hábito",
           review4Body: "La mayoría de las apps de journaling me pierden en una semana. Esta mantiene todo fácil, privado y limpio para registrar lo que pasó y cómo me sentí.",
+          shareAppEyebrow: "Comparte Diary with lock",
+          shareAppTitle: "¿Conoces a alguien que necesite un diario privado?",
+          shareAppBody: "Envíale el enlace de App Store con un toque.",
+          shareAppButton: "Compartir app",
+          shareAppSuccess: "Enlace copiado",
           countryUSA: "EE. UU.",
           countryKorea: "Corea",
           countryGermany: "Alemania",
@@ -613,6 +667,11 @@
           review3Body: "J'ai commencé sur mon téléphone et j'ai adoré retrouver mes entrées sur d'autres appareils. C'est devenu un espace fiable pour mes souvenirs quotidiens.",
           review4Title: "Assez simple pour garder l'habitude",
           review4Body: "La plupart des apps de journal me perdent après une semaine. Celle-ci reste simple, privée et claire pour noter ce qui s'est passé et ce que j'ai ressenti.",
+          shareAppEyebrow: "Partager Diary with lock",
+          shareAppTitle: "Vous connaissez quelqu'un qui a besoin d'un journal privé ?",
+          shareAppBody: "Envoyez-lui le lien App Store en un geste.",
+          shareAppButton: "Partager l'app",
+          shareAppSuccess: "Lien copié",
           countryUSA: "États-Unis",
           countryKorea: "Corée",
           countryGermany: "Allemagne",
@@ -655,6 +714,11 @@
           review3Body: "بدأت باستخدامه على الهاتف وأعجبني أن يومياتي تنتقل معي إلى الأجهزة الأخرى. هكذا تحول من تجربة عابرة إلى مساحة يومية أثق بها.",
           review4Title: "بسيط بما يكفي ليستمر العادَة",
           review4Body: "معظم تطبيقات اليوميات أفقد الحماس لها خلال أسبوع. هذا التطبيق سهل وخاص ويمنحني مكانًا واضحًا لتسجيل ما حدث وما شعرت به.",
+          shareAppEyebrow: "شارك Diary with lock",
+          shareAppTitle: "هل تعرف شخصًا يحتاج إلى دفتر يوميات خاص؟",
+          shareAppBody: "أرسل له رابط App Store بلمسة واحدة.",
+          shareAppButton: "مشاركة التطبيق",
+          shareAppSuccess: "تم نسخ الرابط",
           countryUSA: "الولايات المتحدة",
           countryKorea: "كوريا",
           countryGermany: "ألمانيا",
@@ -697,6 +761,11 @@
           review3Body: "আমি ফোনে শুরু করেছিলাম, আর ভালো লেগেছে যে আমার এন্ট্রিগুলো অন্য ডিভাইসেও পাওয়া যায়। এতে এটা কেবল একটা সাধারণ ডায়েরি নয়, বরং প্রতিদিনের স্মৃতির জন্য ভরসার জায়গা হয়ে গেছে।",
           review4Title: "এতটাই সহজ যে অভ্যাসটা টিকে যায়",
           review4Body: "বেশিরভাগ জার্নালিং অ্যাপ আমি এক সপ্তাহের মধ্যে ছেড়ে দিই। এটা সহজ, ব্যক্তিগত, আর কী ঘটল ও আমি কী অনুভব করলাম তা পরিষ্কারভাবে লিখে রাখার জায়গা দেয়।",
+          shareAppEyebrow: "Diary with lock শেয়ার করুন",
+          shareAppTitle: "এমন কাউকে চেনেন যে একটি ব্যক্তিগত ডায়েরি চায়?",
+          shareAppBody: "এক ট্যাপে তাকে App Store লিংক পাঠান।",
+          shareAppButton: "অ্যাপ শেয়ার করুন",
+          shareAppSuccess: "লিংক কপি হয়েছে",
           countryUSA: "যুক্তরাষ্ট্র",
           countryKorea: "কোরিয়া",
           countryGermany: "জার্মানি",
@@ -739,6 +808,11 @@
           review3Body: "Comecei no celular e adorei ver que minhas entradas me acompanhavam em outros dispositivos. Isso transformou o app em algo em que realmente confio para memórias diárias.",
           review4Title: "Simples o bastante para manter o hábito",
           review4Body: "A maioria dos apps de journaling me perde em uma semana. Este mantém tudo fácil, privado e limpo para registrar o que aconteceu e como eu me senti.",
+          shareAppEyebrow: "Compartilhe Diary with lock",
+          shareAppTitle: "Conhece alguém que precisa de um diário privado?",
+          shareAppBody: "Envie o link da App Store com um toque.",
+          shareAppButton: "Compartilhar app",
+          shareAppSuccess: "Link copiado",
           countryUSA: "Estados Unidos",
           countryKorea: "Coreia",
           countryGermany: "Alemanha",
@@ -781,6 +855,11 @@
           review3Body: "Я начала пользоваться на телефоне и сразу оценила, что записи доступны и на других устройствах. Так приложение стало моим надёжным местом для ежедневных воспоминаний.",
           review4Title: "Достаточно просто, чтобы привычка сохранилась",
           review4Body: "Большинство приложений для дневника я бросаю через неделю. Это остаётся простым, приватным и удобным для записи того, что произошло и что я чувствовала.",
+          shareAppEyebrow: "Поделиться Diary with lock",
+          shareAppTitle: "Знаете кого-то, кому нужен личный дневник?",
+          shareAppBody: "Отправьте ему ссылку App Store в одно нажатие.",
+          shareAppButton: "Поделиться",
+          shareAppSuccess: "Ссылка скопирована",
           countryUSA: "США",
           countryKorea: "Корея",
           countryGermany: "Германия",
@@ -823,6 +902,11 @@
           review3Body: "میں نے فون پر شروع کیا اور اچھا لگا کہ میری تحریریں دوسرے ڈیوائسز پر بھی مل جاتی ہیں۔ اس نے اسے روزمرہ یادوں کے لیے ایک قابلِ اعتماد جگہ بنا دیا۔",
           review4Title: "اتنا سادہ کہ عادت قائم رہے",
           review4Body: "زیادہ تر جرنلنگ ایپس میں ایک ہفتے بعد دلچسپی ختم ہو جاتی ہے۔ یہ ایپ آسان، نجی اور صاف جگہ دیتی ہے جہاں میں دن اور اپنے احساسات لکھ سکتی ہوں۔",
+          shareAppEyebrow: "Diary with lock شیئر کریں",
+          shareAppTitle: "کیا آپ کسی ایسے شخص کو جانتے ہیں جسے نجی ڈائری چاہیے؟",
+          shareAppBody: "ایک ٹیپ میں اسے App Store لنک بھیجیں۔",
+          shareAppButton: "ایپ شیئر کریں",
+          shareAppSuccess: "لنک کاپی ہو گیا",
           countryUSA: "امریکہ",
           countryKorea: "کوریا",
           countryGermany: "جرمنی",
@@ -865,6 +949,11 @@
           review3Body: "Ban đầu mình dùng trên điện thoại, rồi thích luôn vì nội dung theo mình sang cả thiết bị khác. Nó biến app từ chỗ ghi cho vui thành nơi lưu ký ức hằng ngày mình thật sự tin tưởng.",
           review4Title: "Đủ đơn giản để duy trì thói quen mỗi ngày",
           review4Body: "Nhiều app journaling làm mình bỏ sau một tuần. App này ít ma sát, riêng tư và đủ gọn gàng để mình ghi lại ngày hôm đó đã xảy ra gì và mình cảm thấy thế nào.",
+          shareAppEyebrow: "Chia sẻ Diary with lock",
+          shareAppTitle: "Bạn biết ai đang cần một cuốn nhật ký riêng tư?",
+          shareAppBody: "Gửi cho họ link App Store chỉ với một chạm.",
+          shareAppButton: "Chia sẻ app",
+          shareAppSuccess: "Đã sao chép link",
           countryUSA: "Hoa Kỳ",
           countryKorea: "Hàn Quốc",
           countryGermany: "Đức",
@@ -932,11 +1021,58 @@
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
 
+      const shareUrl = "https://apps.apple.com/us/app/diary-with-lock/id1347511716";
+      const shareText = () => {
+        const copy = translations[languageSelect.value] || translations.en;
+        return `${copy.pageTitle} — ${copy.heroLede}`;
+      };
+
+      const shareButtons = document.querySelectorAll(".share-button");
+
+      const handleShare = async (button) => {
+        const copy = translations[languageSelect.value] || translations.en;
+        try {
+          if (navigator.share) {
+            await navigator.share({
+              title: copy.pageTitle,
+              text: shareText(),
+              url: shareUrl
+            });
+          } else if (navigator.clipboard?.writeText) {
+            await navigator.clipboard.writeText(shareUrl);
+            const label = button.querySelector(".share-button-label");
+            if (label) {
+              label.textContent = copy.shareAppSuccess;
+            }
+            window.setTimeout(() => {
+              if (label) {
+                label.textContent = copy.shareAppButton;
+              }
+            }, 1600);
+          }
+
+          logEvent(analytics, "share_app_success", {
+            app_name: "Diary with lock",
+            placement: button.dataset.analyticsPlacement
+          });
+        } catch (error) {
+          if (error?.name === "AbortError") {
+            return;
+          }
+        }
+      };
+
+      shareButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          handleShare(button);
+        });
+      });
+
       document.querySelectorAll("[data-analytics-event]").forEach((link) => {
         link.addEventListener("click", () => {
           logEvent(analytics, link.dataset.analyticsEvent, {
             link_text: link.textContent.trim(),
-            link_url: link.href,
+            link_url: link.getAttribute("href") || shareUrl,
             item_name: link.dataset.analyticsLabel,
             app_name: link.dataset.analyticsApp,
             placement: link.dataset.analyticsPlacement
