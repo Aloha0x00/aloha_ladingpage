@@ -47,6 +47,7 @@
     <link rel="manifest" href="site.webmanifest" />
     <link rel="preload" as="image" href="assets/diary-screenshot-1.jpg" />
     <link rel="preload" as="image" href="assets/diary-icon.jpg" />
+    <link rel="preload" as="image" href="assets/diarywithlock-promote-asia.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -108,25 +109,43 @@
         <a class="brand" href="#top" aria-label="Diary with lock home">
           <img src="assets/diary-icon.jpg" alt="Diary with lock" />
         </a>
-        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
-          <span class="theme-toggle-icon" aria-hidden="true"></span>
-          <span class="theme-toggle-text">Dark</span>
-        </button>
+        <div class="header-actions">
+          <label class="language-switcher" for="language-select">
+            <span class="language-switcher-label" data-i18n="languageLabel">Language</span>
+            <select id="language-select" aria-label="Select language">
+              <option value="en">English</option>
+              <option value="zh">中文</option>
+              <option value="hi">हिन्दी</option>
+              <option value="es">Español</option>
+              <option value="fr">Français</option>
+              <option value="ar">العربية</option>
+              <option value="bn">বাংলা</option>
+              <option value="pt">Português</option>
+              <option value="ru">Русский</option>
+              <option value="ur">اردو</option>
+              <option value="vi">Tiếng Việt</option>
+            </select>
+          </label>
+          <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+            <span class="theme-toggle-icon" aria-hidden="true"></span>
+            <span class="theme-toggle-text">Dark</span>
+          </button>
+        </div>
       </nav>
     </header>
 
-    <main id="top" class="one-page">
+    <main id="top" class="landing-page one-page">
       <section class="one-page-shell" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Product spotlight</p>
-          <h1 id="hero-title" class="hero-title"><span class="product-accent">Diary with lock</span> keeps private thoughts beautifully protected.</h1>
-          <p class="hero-lede">
+          <p class="eyebrow" data-i18n="heroEyebrow">Product spotlight</p>
+          <h1 id="hero-title" class="hero-title" data-i18n-html="heroTitle"><span class="product-accent">Diary with lock</span> keeps private thoughts beautifully protected.</h1>
+          <p class="hero-lede" data-i18n="heroLede">
             A colorful diary, journal, and notes app for recording daily events, secrets,
             feelings, and memories behind a personal passcode.
           </p>
           <div class="hero-actions">
             <a
-              class="button primary"
+              class="button primary attention-cta"
               href="https://apps.apple.com/us/app/diary-with-lock/id1347511716"
               data-analytics-event="view_app_store_click"
               data-analytics-label="hero_view_app_store"
@@ -134,17 +153,18 @@
               data-analytics-placement="hero"
               rel="noopener"
               target="_blank"
+              data-i18n="ctaUseNow"
             >
-              View App Store
+              Use it NOW
             </a>
           </div>
         </div>
 
         <div class="hero-visual" aria-label="Diary with lock app preview">
           <div class="spotlight-card compact-card">
-            <div class="spotlight-label">New feature</div>
-            <h2>Cloud sync</h2>
-            <p>Sync up all diaries across devices with cloud.</p>
+            <div class="spotlight-label" data-i18n="newFeature">New feature</div>
+            <h2 data-i18n="cloudSyncTitle">Cloud sync</h2>
+            <p data-i18n="cloudSyncBody">Sync up all diaries across devices with cloud.</p>
           </div>
           <div class="screenshot-stage" aria-hidden="true">
             <figure class="screen-shot shot-primary">
@@ -160,21 +180,21 @@
         <aside class="quick-feature" aria-label="Diary with lock feature highlights">
           <article>
             <span class="feature-icon palette"></span>
-            <h3>Personal style</h3>
-            <p>Customize colors and fonts for every diary.</p>
+            <h3 data-i18n="featureStyleTitle">Personal style</h3>
+            <p data-i18n="featureStyleBody">Customize colors and fonts for every diary.</p>
           </article>
           <article>
             <span class="feature-icon lock"></span>
-            <h3>Password lock</h3>
-            <p>Protect private notes with a personal passcode.</p>
+            <h3 data-i18n="featureLockTitle">Password lock</h3>
+            <p data-i18n="featureLockBody">Protect private notes with a personal passcode.</p>
           </article>
         </aside>
 
         <section class="apps-panel" aria-labelledby="apps-title">
           <div class="apps-title-row">
             <div>
-              <p class="eyebrow">More apps</p>
-              <h2 id="apps-title">More apps from the developer</h2>
+              <p class="eyebrow" data-i18n="moreAppsEyebrow">More apps</p>
+              <h2 id="apps-title" data-i18n="moreAppsTitle">More apps from the developer</h2>
             </div>
             <a
               class="more-link"
@@ -183,6 +203,7 @@
               data-analytics-label="view_all_apps"
               rel="noopener"
               target="_blank"
+              data-i18n="viewAll"
             >
               View all
             </a>
@@ -194,10 +215,10 @@
                 <img class="app-icon real-card-icon" src="assets/diary-icon.jpg" alt="" />
                 <div>
                   <h3>Diary with lock</h3>
-                  <p class="category">Lifestyle</p>
+                  <p class="category" data-i18n="categoryLifestyle">Lifestyle</p>
                 </div>
               </div>
-              <p class="takeaway">Private journal with cloud sync.</p>
+              <p class="takeaway" data-i18n="diaryTakeaway">Private journal with cloud sync.</p>
               <a
                 class="download-link"
                 href="https://apps.apple.com/us/app/diary-with-lock/id1347511716"
@@ -207,6 +228,7 @@
                 data-analytics-placement="apps_panel"
                 rel="noopener"
                 target="_blank"
+                data-i18n="download"
               >
                 Download
               </a>
@@ -217,7 +239,7 @@
                 <img class="app-icon real-card-icon" src="assets/kpop-icon.jpg" alt="" />
                 <div>
                   <h3>KPop Wallpaper HD</h3>
-                  <p class="category">Photo &amp; Video</p>
+                  <p class="category" data-i18n="categoryPhotoVideo">Photo &amp; Video</p>
                 </div>
               </div>
               <a
@@ -229,6 +251,7 @@
                 data-analytics-placement="apps_panel"
                 rel="noopener"
                 target="_blank"
+                data-i18n="download"
               >
                 Download
               </a>
@@ -239,7 +262,7 @@
                 <img class="app-icon real-card-icon" src="assets/notepad-icon.jpg" alt="" />
                 <div>
                   <h3>Notepad</h3>
-                  <p class="category">Lifestyle</p>
+                  <p class="category" data-i18n="categoryLifestyle">Lifestyle</p>
                 </div>
               </div>
               <a
@@ -251,12 +274,109 @@
                 data-analytics-placement="apps_panel"
                 rel="noopener"
                 target="_blank"
+                data-i18n="download"
               >
                 Download
               </a>
             </article>
           </div>
         </section>
+      </section>
+
+      <section class="social-proof-section" aria-labelledby="reviews-title">
+        <div class="social-proof-layout">
+          <figure class="promo-spotlight">
+            <img src="assets/diarywithlock-promote-asia.png" alt="Diary with lock spotlight promotion" />
+            <figcaption class="promo-overlay">
+              <p data-i18n="promoOverlay">Keep your story private, styled, and always within reach.</p>
+              <a
+                class="button primary promo-overlay-cta"
+                href="https://apps.apple.com/us/app/diary-with-lock/id1347511716"
+                data-analytics-event="view_app_store_click"
+                data-analytics-label="spotlight_photo_cta"
+                data-analytics-app="Diary with lock"
+                data-analytics-placement="spotlight_photo"
+                rel="noopener"
+                target="_blank"
+                data-i18n="ctaUseNow"
+              >
+                Use it NOW
+              </a>
+            </figcaption>
+          </figure>
+
+          <div class="reviews-column">
+            <div class="section-heading compact">
+              <p class="eyebrow" data-i18n="userStoriesEyebrow">User stories</p>
+              <h2 id="reviews-title" data-i18n="reviewsTitle">Có hàng trăm nghìn người đang dùng Diary with Lock mỗi ngày và cảm nhận của họ khi sử dụng</h2>
+            </div>
+            <div class="reviews-grid">
+              <article class="review-card">
+                <div class="review-head">
+                  <img class="review-avatar" src="assets/reviewer-1.png" alt="Illustrative user profile portrait" />
+                  <div>
+                    <h3>Lina Tran</h3>
+                    <p class="review-meta"><span class="review-country">🇺🇸 <span data-i18n="countryUSA">USA</span></span> • March 18, 2026</p>
+                  </div>
+                  <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                </div>
+                <p class="review-title" data-i18n="review1Title">A private reset after every long day</p>
+                <p class="review-copy" data-i18n="review1Body">
+                  I use it before bed to unload thoughts I do not want mixed with work chat or notes.
+                  The passcode lock makes it feel like my own space, not just another writing app.
+                </p>
+              </article>
+
+              <article class="review-card">
+                <div class="review-head">
+                  <img class="review-avatar" src="assets/reviewer-2.png" alt="Illustrative user profile portrait" />
+                  <div>
+                    <h3>Minji Park</h3>
+                    <p class="review-meta"><span class="review-country">🇰🇷 <span data-i18n="countryKorea">Korea</span></span> • April 7, 2026</p>
+                  </div>
+                  <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                </div>
+                <p class="review-title" data-i18n="review2Title">Better than keeping feelings in scattered notes</p>
+                <p class="review-copy" data-i18n="review2Body">
+                  I wanted something softer and more personal than a plain notes app. The themes,
+                  fonts, and simple timeline make me want to come back and write every night.
+                </p>
+              </article>
+
+              <article class="review-card">
+                <div class="review-head">
+                  <img class="review-avatar" src="assets/reviewer-3.png" alt="Illustrative user profile portrait" />
+                  <div>
+                    <h3>Sofia Reyes</h3>
+                    <p class="review-meta"><span class="review-country">🇩🇪 <span data-i18n="countryGermany">Germany</span></span> • June 1, 2026</p>
+                  </div>
+                  <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                </div>
+                <p class="review-title" data-i18n="review3Title">Cloud sync is what made it stick</p>
+                <p class="review-copy" data-i18n="review3Body">
+                  I started on my phone and loved that my entries followed me across devices. That
+                  turned it from a casual diary into something I actually trust for daily memories.
+                </p>
+              </article>
+
+              <article class="review-card">
+                <div class="review-head">
+                  <img class="review-avatar" src="assets/reviewer-4.png" alt="Illustrative user profile portrait" />
+                  <div>
+                    <h3>Daniel Kim</h3>
+                    <p class="review-meta"><span class="review-country">🇳🇴 <span data-i18n="countryNorway">Norway</span></span> • August 14, 2026</p>
+                  </div>
+                  <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                </div>
+                <p class="review-title" data-i18n="review4Title">Simple enough to keep the habit going</p>
+                <p class="review-copy" data-i18n="review4Body">
+                  Most journaling apps lose me after a week. This one keeps the friction low, feels
+                  private, and gives me a clean place to track what happened and how I felt.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <script type="module">
@@ -275,21 +395,533 @@
 
       const themeToggle = document.querySelector(".theme-toggle");
       const themeToggleText = document.querySelector(".theme-toggle-text");
+      const languageSelect = document.querySelector("#language-select");
       const themeColor = document.querySelector('meta[name="theme-color"]');
+      const descriptionMeta = document.querySelector('meta[name="description"]');
+      const ogTitleMeta = document.querySelector('meta[property="og:title"]');
+      const ogDescriptionMeta = document.querySelector('meta[property="og:description"]');
+      const twitterTitleMeta = document.querySelector('meta[name="twitter:title"]');
+      const twitterDescriptionMeta = document.querySelector('meta[name="twitter:description"]');
       const savedTheme = localStorage.getItem("theme");
+      const savedLanguage = localStorage.getItem("language") || "en";
       const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
       const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
+
+      const translations = {
+        en: {
+          pageTitle: "Diary with lock - Private Diary App for iPhone",
+          metaDescription: "Diary with lock is a private diary, journal, and notes app for iPhone with password protection, personal themes, and cloud sync across devices.",
+          themeToggleDark: "Dark",
+          themeToggleLight: "Light",
+          themeAriaToDark: "Switch to dark mode",
+          themeAriaToLight: "Switch to light mode",
+          languageLabel: "Language",
+          heroEyebrow: "Product spotlight",
+          heroTitle: '<span class="product-accent">Diary with lock</span> keeps private thoughts beautifully protected.',
+          heroLede: "A colorful diary, journal, and notes app for recording daily events, secrets, feelings, and memories behind a personal passcode.",
+          ctaUseNow: "Use it NOW",
+          newFeature: "New feature",
+          cloudSyncTitle: "Cloud sync",
+          cloudSyncBody: "Sync up all diaries across devices with cloud.",
+          featureStyleTitle: "Personal style",
+          featureStyleBody: "Customize colors and fonts for every diary.",
+          featureLockTitle: "Password lock",
+          featureLockBody: "Protect private notes with a personal passcode.",
+          moreAppsEyebrow: "More apps",
+          moreAppsTitle: "More apps from the developer",
+          viewAll: "View all",
+          categoryLifestyle: "Lifestyle",
+          categoryPhotoVideo: "Photo & Video",
+          diaryTakeaway: "Private journal with cloud sync.",
+          download: "Download",
+          promoOverlay: "Keep your story private, styled, and always within reach.",
+          userStoriesEyebrow: "User stories",
+          reviewsTitle: "Hundreds of thousands of people use Diary with Lock every day and this is how it feels for them.",
+          review1Title: "A private reset after every long day",
+          review1Body: "I use it before bed to unload thoughts I do not want mixed with work chat or notes. The passcode lock makes it feel like my own space, not just another writing app.",
+          review2Title: "Better than keeping feelings in scattered notes",
+          review2Body: "I wanted something softer and more personal than a plain notes app. The themes, fonts, and simple timeline make me want to come back and write every night.",
+          review3Title: "Cloud sync is what made it stick",
+          review3Body: "I started on my phone and loved that my entries followed me across devices. That turned it from a casual diary into something I actually trust for daily memories.",
+          review4Title: "Simple enough to keep the habit going",
+          review4Body: "Most journaling apps lose me after a week. This one keeps the friction low, feels private, and gives me a clean place to track what happened and how I felt.",
+          countryUSA: "USA",
+          countryKorea: "Korea",
+          countryGermany: "Germany",
+          countryNorway: "Norway"
+        },
+        zh: {
+          pageTitle: "Diary with lock - iPhone 私密日记应用",
+          metaDescription: "Diary with lock 是一款适用于 iPhone 的私密日记、日志和笔记应用，提供密码保护、个性主题和跨设备云同步。",
+          themeToggleDark: "深色",
+          themeToggleLight: "浅色",
+          themeAriaToDark: "切换到深色模式",
+          themeAriaToLight: "切换到浅色模式",
+          languageLabel: "语言",
+          heroEyebrow: "产品焦点",
+          heroTitle: '<span class="product-accent">Diary with lock</span> 优雅地守护你的私密心事。',
+          heroLede: "这是一款色彩丰富的日记、日志和笔记应用，可在个人密码保护下记录日常、秘密、情绪与回忆。",
+          ctaUseNow: "立即使用",
+          newFeature: "新功能",
+          cloudSyncTitle: "云同步",
+          cloudSyncBody: "通过云端在所有设备间同步全部日记。",
+          featureStyleTitle: "个性风格",
+          featureStyleBody: "为每一本日记自定义颜色与字体。",
+          featureLockTitle: "密码锁",
+          featureLockBody: "用个人密码保护你的私密笔记。",
+          moreAppsEyebrow: "更多应用",
+          moreAppsTitle: "开发者的更多应用",
+          viewAll: "查看全部",
+          categoryLifestyle: "生活方式",
+          categoryPhotoVideo: "照片与视频",
+          diaryTakeaway: "支持云同步的私密日记。",
+          download: "下载",
+          promoOverlay: "让你的故事保持私密、有风格，并始终触手可及。",
+          userStoriesEyebrow: "用户故事",
+          reviewsTitle: "每天都有数十万人在使用 Diary with Lock，这就是他们使用时的感受。",
+          review1Title: "漫长一天后的私密重置",
+          review1Body: "我会在睡前用它整理情绪，不想让这些想法混进工作聊天或普通笔记里。密码锁让它真正像属于我自己的空间。",
+          review2Title: "比把情绪散落在各处笔记里更好",
+          review2Body: "我想要一个比普通笔记应用更柔和、更私人的地方。主题、字体和简单时间线让我每天晚上都想回来写。",
+          review3Title: "云同步让我真正坚持了下来",
+          review3Body: "我一开始在手机上用，后来发现内容能跟着我同步到其他设备。这让它从随手写写变成了我真正信任的日常记录工具。",
+          review4Title: "足够简单，习惯才会留下来",
+          review4Body: "很多日记应用我用一周就放弃了。这个应用阻力很低，感觉私密，也让我能清楚记录发生了什么以及自己的感受。",
+          countryUSA: "美国",
+          countryKorea: "韩国",
+          countryGermany: "德国",
+          countryNorway: "挪威"
+        },
+        hi: {
+          pageTitle: "Diary with lock - iPhone के लिए निजी डायरी ऐप",
+          metaDescription: "Diary with lock iPhone के लिए एक निजी डायरी, जर्नल और नोट्स ऐप है जिसमें पासवर्ड सुरक्षा, पर्सनल थीम और डिवाइसों के बीच क्लाउड सिंक है।",
+          themeToggleDark: "डार्क",
+          themeToggleLight: "लाइट",
+          themeAriaToDark: "डार्क मोड पर जाएँ",
+          themeAriaToLight: "लाइट मोड पर जाएँ",
+          languageLabel: "भाषा",
+          heroEyebrow: "मुख्य आकर्षण",
+          heroTitle: '<span class="product-accent">Diary with lock</span> आपकी निजी बातों को खूबसूरती से सुरक्षित रखता है।',
+          heroLede: "रंगीन डायरी, जर्नल और नोट्स ऐप जो रोज़मर्रा की बातें, राज़, भावनाएँ और यादें निजी पासकोड के पीछे सुरक्षित रखता है।",
+          ctaUseNow: "अभी उपयोग करें",
+          newFeature: "नई सुविधा",
+          cloudSyncTitle: "क्लाउड सिंक",
+          cloudSyncBody: "क्लाउड के जरिए सभी डिवाइसों पर अपनी सारी डायरी सिंक करें।",
+          featureStyleTitle: "पर्सनल स्टाइल",
+          featureStyleBody: "हर डायरी के लिए रंग और फॉन्ट कस्टमाइज़ करें।",
+          featureLockTitle: "पासवर्ड लॉक",
+          featureLockBody: "निजी नोट्स को अपने पासकोड से सुरक्षित रखें।",
+          moreAppsEyebrow: "और ऐप्स",
+          moreAppsTitle: "डेवलपर के और ऐप्स",
+          viewAll: "सब देखें",
+          categoryLifestyle: "लाइफ़स्टाइल",
+          categoryPhotoVideo: "फोटो और वीडियो",
+          diaryTakeaway: "क्लाउड सिंक के साथ निजी जर्नल।",
+          download: "डाउनलोड",
+          promoOverlay: "अपनी कहानी को निजी, सुंदर और हमेशा पास रखें।",
+          userStoriesEyebrow: "यूज़र स्टोरीज़",
+          reviewsTitle: "हर दिन लाखों में नहीं तो सैकड़ों हज़ार लोग Diary with Lock का उपयोग करते हैं, और उनके अनुभव कुछ ऐसे हैं।",
+          review1Title: "लंबे दिन के बाद एक निजी राहत",
+          review1Body: "मैं सोने से पहले इसमें अपने मन की बातें लिखती हूँ ताकि वे काम की चैट या दूसरे नोट्स में न मिल जाएँ। पासकोड लॉक इसे सच में मेरा निजी स्थान बना देता है।",
+          review2Title: "बिखरे नोट्स में भावनाएँ रखने से बेहतर",
+          review2Body: "मुझे साधारण नोट्स ऐप से ज्यादा नरम और निजी जगह चाहिए थी। इसके थीम, फॉन्ट और सरल टाइमलाइन मुझे हर रात लिखने वापस खींच लाते हैं।",
+          review3Title: "क्लाउड सिंक ने आदत पक्की कर दी",
+          review3Body: "मैंने इसे फोन पर शुरू किया और अच्छा लगा कि मेरी एंट्रियाँ दूसरे डिवाइसों पर भी मिल जाती हैं। इससे यह एक कैज़ुअल डायरी से भरोसेमंद रोज़ाना यादों की जगह बन गया।",
+          review4Title: "इतना आसान कि आदत बनी रहे",
+          review4Body: "ज़्यादातर जर्नलिंग ऐप मैं एक हफ्ते में छोड़ देती हूँ। यह ऐप सरल, निजी और साफ़ तरीके से मुझे दिन और भावनाएँ ट्रैक करने देता है।",
+          countryUSA: "अमेरिका",
+          countryKorea: "कोरिया",
+          countryGermany: "जर्मनी",
+          countryNorway: "नॉर्वे"
+        },
+        es: {
+          pageTitle: "Diary with lock - Diario privado para iPhone",
+          metaDescription: "Diary with lock es una app privada de diario, journal y notas para iPhone con protección por contraseña, temas personales y sincronización en la nube entre dispositivos.",
+          themeToggleDark: "Oscuro",
+          themeToggleLight: "Claro",
+          themeAriaToDark: "Cambiar a modo oscuro",
+          themeAriaToLight: "Cambiar a modo claro",
+          languageLabel: "Idioma",
+          heroEyebrow: "Producto destacado",
+          heroTitle: '<span class="product-accent">Diary with lock</span> protege tus pensamientos privados con elegancia.',
+          heroLede: "Una app colorida de diario, journal y notas para guardar eventos diarios, secretos, sentimientos y recuerdos detrás de un código personal.",
+          ctaUseNow: "Úsala ahora",
+          newFeature: "Nueva función",
+          cloudSyncTitle: "Sincronización en la nube",
+          cloudSyncBody: "Sincroniza todos tus diarios entre dispositivos con la nube.",
+          featureStyleTitle: "Estilo personal",
+          featureStyleBody: "Personaliza colores y tipografías para cada diario.",
+          featureLockTitle: "Bloqueo con contraseña",
+          featureLockBody: "Protege tus notas privadas con un código personal.",
+          moreAppsEyebrow: "Más apps",
+          moreAppsTitle: "Más apps del desarrollador",
+          viewAll: "Ver todo",
+          categoryLifestyle: "Estilo de vida",
+          categoryPhotoVideo: "Foto y video",
+          diaryTakeaway: "Diario privado con sincronización en la nube.",
+          download: "Descargar",
+          promoOverlay: "Mantén tu historia privada, con estilo y siempre a tu alcance.",
+          userStoriesEyebrow: "Historias de usuarios",
+          reviewsTitle: "Cientos de miles de personas usan Diary with Lock cada día y así es como se siente para ellas.",
+          review1Title: "Un reinicio privado al final del día",
+          review1Body: "La uso antes de dormir para soltar pensamientos que no quiero mezclar con chats de trabajo o notas sueltas. El código la hace sentir como un espacio realmente mío.",
+          review2Title: "Mejor que dejar emociones en notas dispersas",
+          review2Body: "Quería algo más cálido y personal que una app de notas normal. Los temas, las fuentes y la línea de tiempo simple hacen que quiera volver cada noche.",
+          review3Title: "La nube hizo que me quedara",
+          review3Body: "Empecé en el teléfono y me encantó que mis entradas me siguieran en otros dispositivos. Eso la convirtió en una herramienta diaria en la que realmente confío.",
+          review4Title: "Lo bastante simple para mantener el hábito",
+          review4Body: "La mayoría de las apps de journaling me pierden en una semana. Esta mantiene todo fácil, privado y limpio para registrar lo que pasó y cómo me sentí.",
+          countryUSA: "EE. UU.",
+          countryKorea: "Corea",
+          countryGermany: "Alemania",
+          countryNorway: "Noruega"
+        },
+        fr: {
+          pageTitle: "Diary with lock - Journal privé pour iPhone",
+          metaDescription: "Diary with lock est une application de journal intime, journal et notes pour iPhone avec protection par mot de passe, thèmes personnels et synchronisation cloud entre appareils.",
+          themeToggleDark: "Sombre",
+          themeToggleLight: "Clair",
+          themeAriaToDark: "Passer en mode sombre",
+          themeAriaToLight: "Passer en mode clair",
+          languageLabel: "Langue",
+          heroEyebrow: "Produit mis en avant",
+          heroTitle: '<span class="product-accent">Diary with lock</span> protège vos pensées privées avec élégance.',
+          heroLede: "Une application colorée de journal, carnet et notes pour enregistrer vos journées, secrets, émotions et souvenirs derrière un code personnel.",
+          ctaUseNow: "Utilisez-la maintenant",
+          newFeature: "Nouvelle fonction",
+          cloudSyncTitle: "Synchronisation cloud",
+          cloudSyncBody: "Synchronisez tous vos journaux sur tous vos appareils via le cloud.",
+          featureStyleTitle: "Style personnel",
+          featureStyleBody: "Personnalisez les couleurs et polices de chaque journal.",
+          featureLockTitle: "Verrouillage par mot de passe",
+          featureLockBody: "Protégez vos notes privées avec un code personnel.",
+          moreAppsEyebrow: "Plus d'apps",
+          moreAppsTitle: "Plus d'apps du développeur",
+          viewAll: "Voir tout",
+          categoryLifestyle: "Style de vie",
+          categoryPhotoVideo: "Photo et vidéo",
+          diaryTakeaway: "Journal privé avec synchronisation cloud.",
+          download: "Télécharger",
+          promoOverlay: "Gardez votre histoire privée, élégante et toujours à portée de main.",
+          userStoriesEyebrow: "Témoignages",
+          reviewsTitle: "Des centaines de milliers de personnes utilisent Diary with Lock chaque jour, et voici ce qu'elles ressentent.",
+          review1Title: "Une remise à zéro privée après une longue journée",
+          review1Body: "Je l'utilise avant de dormir pour vider mon esprit sans mélanger cela aux messages de travail ou à des notes dispersées. Le code d'accès en fait un vrai espace à moi.",
+          review2Title: "Mieux que des émotions éparpillées dans des notes",
+          review2Body: "Je voulais quelque chose de plus doux et personnel qu'une simple app de notes. Les thèmes, polices et la timeline simple me donnent envie d'écrire chaque soir.",
+          review3Title: "La synchronisation cloud m'a vraiment convaincue",
+          review3Body: "J'ai commencé sur mon téléphone et j'ai adoré retrouver mes entrées sur d'autres appareils. C'est devenu un espace fiable pour mes souvenirs quotidiens.",
+          review4Title: "Assez simple pour garder l'habitude",
+          review4Body: "La plupart des apps de journal me perdent après une semaine. Celle-ci reste simple, privée et claire pour noter ce qui s'est passé et ce que j'ai ressenti.",
+          countryUSA: "États-Unis",
+          countryKorea: "Corée",
+          countryGermany: "Allemagne",
+          countryNorway: "Norvège"
+        },
+        ar: {
+          pageTitle: "Diary with lock - تطبيق يوميات خاص للآيفون",
+          metaDescription: "Diary with lock هو تطبيق يوميات وملاحظات خاص للآيفون مع حماية بكلمة مرور وثيمات شخصية ومزامنة سحابية بين الأجهزة.",
+          themeToggleDark: "داكن",
+          themeToggleLight: "فاتح",
+          themeAriaToDark: "التبديل إلى الوضع الداكن",
+          themeAriaToLight: "التبديل إلى الوضع الفاتح",
+          languageLabel: "اللغة",
+          heroEyebrow: "أبرز المنتج",
+          heroTitle: '<span class="product-accent">Diary with lock</span> يحمي أفكارك الخاصة بأناقة.',
+          heroLede: "تطبيق يوميات ومفكرة وملاحظات ملون لتسجيل أحداثك اليومية وأسرارك ومشاعرك وذكرياتك خلف رمز مرور شخصي.",
+          ctaUseNow: "استخدمه الآن",
+          newFeature: "ميزة جديدة",
+          cloudSyncTitle: "مزامنة سحابية",
+          cloudSyncBody: "زامن كل يومياتك عبر جميع الأجهزة من خلال السحابة.",
+          featureStyleTitle: "أسلوب شخصي",
+          featureStyleBody: "خصص الألوان والخطوط لكل يومية.",
+          featureLockTitle: "قفل بكلمة مرور",
+          featureLockBody: "احمِ ملاحظاتك الخاصة برمز مرور شخصي.",
+          moreAppsEyebrow: "تطبيقات أخرى",
+          moreAppsTitle: "المزيد من تطبيقات المطور",
+          viewAll: "عرض الكل",
+          categoryLifestyle: "نمط الحياة",
+          categoryPhotoVideo: "صور وفيديو",
+          diaryTakeaway: "يوميات خاصة مع مزامنة سحابية.",
+          download: "تنزيل",
+          promoOverlay: "اجعل قصتك خاصة وأنيقة ودائمًا في متناولك.",
+          userStoriesEyebrow: "قصص المستخدمين",
+          reviewsTitle: "هناك مئات الآلاف ممن يستخدمون Diary with Lock كل يوم، وهذا ما يشعرون به أثناء الاستخدام.",
+          review1Title: "راحة خاصة بعد يوم طويل",
+          review1Body: "أستخدمه قبل النوم لأفرغ أفكاري بعيدًا عن محادثات العمل أو الملاحظات العادية. قفل الرمز يجعله مساحة شخصية حقيقية لي.",
+          review2Title: "أفضل من بعثرة المشاعر في ملاحظات متفرقة",
+          review2Body: "كنت أريد شيئًا أكثر دفئًا وخصوصية من تطبيق ملاحظات عادي. الثيمات والخطوط والخط الزمني البسيط تجعلني أعود للكتابة كل ليلة.",
+          review3Title: "المزامنة السحابية هي ما جعلني أستمر",
+          review3Body: "بدأت باستخدامه على الهاتف وأعجبني أن يومياتي تنتقل معي إلى الأجهزة الأخرى. هكذا تحول من تجربة عابرة إلى مساحة يومية أثق بها.",
+          review4Title: "بسيط بما يكفي ليستمر العادَة",
+          review4Body: "معظم تطبيقات اليوميات أفقد الحماس لها خلال أسبوع. هذا التطبيق سهل وخاص ويمنحني مكانًا واضحًا لتسجيل ما حدث وما شعرت به.",
+          countryUSA: "الولايات المتحدة",
+          countryKorea: "كوريا",
+          countryGermany: "ألمانيا",
+          countryNorway: "النرويج"
+        },
+        bn: {
+          pageTitle: "Diary with lock - iPhone-এর জন্য ব্যক্তিগত ডায়েরি অ্যাপ",
+          metaDescription: "Diary with lock হলো iPhone-এর জন্য একটি ব্যক্তিগত ডায়েরি, জার্নাল ও নোটস অ্যাপ, যেখানে আছে পাসওয়ার্ড সুরক্ষা, ব্যক্তিগত থিম এবং ক্লাউড সিঙ্ক।",
+          themeToggleDark: "ডার্ক",
+          themeToggleLight: "লাইট",
+          themeAriaToDark: "ডার্ক মোডে যান",
+          themeAriaToLight: "লাইট মোডে যান",
+          languageLabel: "ভাষা",
+          heroEyebrow: "প্রধান ফিচার",
+          heroTitle: '<span class="product-accent">Diary with lock</span> আপনার ব্যক্তিগত ভাবনাগুলোকে সুন্দরভাবে সুরক্ষিত রাখে।',
+          heroLede: "রঙিন ডায়েরি, জার্নাল ও নোটস অ্যাপ যা দৈনন্দিন ঘটনা, গোপন কথা, অনুভূতি ও স্মৃতিকে ব্যক্তিগত পাসকোডের আড়ালে রাখে।",
+          ctaUseNow: "এখনই ব্যবহার করুন",
+          newFeature: "নতুন ফিচার",
+          cloudSyncTitle: "ক্লাউড সিঙ্ক",
+          cloudSyncBody: "ক্লাউডের মাধ্যমে সব ডিভাইসে সব ডায়েরি সিঙ্ক করুন।",
+          featureStyleTitle: "নিজস্ব স্টাইল",
+          featureStyleBody: "প্রতিটি ডায়েরির জন্য রঙ ও ফন্ট কাস্টমাইজ করুন।",
+          featureLockTitle: "পাসওয়ার্ড লক",
+          featureLockBody: "ব্যক্তিগত নোটগুলোকে নিজের পাসকোডে সুরক্ষিত রাখুন।",
+          moreAppsEyebrow: "আরও অ্যাপ",
+          moreAppsTitle: "ডেভেলপারের আরও অ্যাপ",
+          viewAll: "সব দেখুন",
+          categoryLifestyle: "লাইফস্টাইল",
+          categoryPhotoVideo: "ফটো ও ভিডিও",
+          diaryTakeaway: "ক্লাউড সিঙ্কসহ ব্যক্তিগত জার্নাল।",
+          download: "ডাউনলোড",
+          promoOverlay: "আপনার গল্পকে ব্যক্তিগত, সুন্দর এবং সবসময় হাতের কাছে রাখুন।",
+          userStoriesEyebrow: "ব্যবহারকারীর অভিজ্ঞতা",
+          reviewsTitle: "প্রতিদিন লক্ষাধিকের কাছাকাছি ব্যবহারকারী Diary with Lock ব্যবহার করেন, আর এটি ব্যবহার করে তাদের অনুভূতি এমনই।",
+          review1Title: "দীর্ঘ দিনের শেষে নিজের জন্য একটি ব্যক্তিগত বিরতি",
+          review1Body: "ঘুমানোর আগে আমি এটা ব্যবহার করি যেন কাজের চ্যাট বা অন্য নোটের সঙ্গে মনের কথা মিশে না যায়। পাসকোড লক এটাকে সত্যিই আমার নিজস্ব জায়গা মনে করায়।",
+          review2Title: "এদিক-ওদিক ছড়ানো নোটে অনুভূতি রাখার চেয়ে ভালো",
+          review2Body: "সাধারণ নোটস অ্যাপের চেয়ে আমি আরও ব্যক্তিগত ও কোমল কিছু চাইছিলাম। থিম, ফন্ট আর সহজ টাইমলাইন আমাকে প্রতি রাতে আবার লিখতে ফেরায়।",
+          review3Title: "ক্লাউড সিঙ্কই আমাকে ধরে রেখেছে",
+          review3Body: "আমি ফোনে শুরু করেছিলাম, আর ভালো লেগেছে যে আমার এন্ট্রিগুলো অন্য ডিভাইসেও পাওয়া যায়। এতে এটা কেবল একটা সাধারণ ডায়েরি নয়, বরং প্রতিদিনের স্মৃতির জন্য ভরসার জায়গা হয়ে গেছে।",
+          review4Title: "এতটাই সহজ যে অভ্যাসটা টিকে যায়",
+          review4Body: "বেশিরভাগ জার্নালিং অ্যাপ আমি এক সপ্তাহের মধ্যে ছেড়ে দিই। এটা সহজ, ব্যক্তিগত, আর কী ঘটল ও আমি কী অনুভব করলাম তা পরিষ্কারভাবে লিখে রাখার জায়গা দেয়।",
+          countryUSA: "যুক্তরাষ্ট্র",
+          countryKorea: "কোরিয়া",
+          countryGermany: "জার্মানি",
+          countryNorway: "নরওয়ে"
+        },
+        pt: {
+          pageTitle: "Diary with lock - App de diário privado para iPhone",
+          metaDescription: "Diary with lock é um app privado de diário, journal e notas para iPhone com proteção por senha, temas pessoais e sincronização em nuvem entre dispositivos.",
+          themeToggleDark: "Escuro",
+          themeToggleLight: "Claro",
+          themeAriaToDark: "Mudar para modo escuro",
+          themeAriaToLight: "Mudar para modo claro",
+          languageLabel: "Idioma",
+          heroEyebrow: "Destaque do produto",
+          heroTitle: '<span class="product-accent">Diary with lock</span> protege pensamentos privados com elegância.',
+          heroLede: "Um app colorido de diário, journal e notas para registrar eventos do dia a dia, segredos, sentimentos e memórias com um código pessoal.",
+          ctaUseNow: "Use agora",
+          newFeature: "Novo recurso",
+          cloudSyncTitle: "Sincronização em nuvem",
+          cloudSyncBody: "Sincronize todos os seus diários em todos os dispositivos com a nuvem.",
+          featureStyleTitle: "Estilo pessoal",
+          featureStyleBody: "Personalize cores e fontes para cada diário.",
+          featureLockTitle: "Bloqueio por senha",
+          featureLockBody: "Proteja notas privadas com um código pessoal.",
+          moreAppsEyebrow: "Mais apps",
+          moreAppsTitle: "Mais apps do desenvolvedor",
+          viewAll: "Ver tudo",
+          categoryLifestyle: "Estilo de vida",
+          categoryPhotoVideo: "Foto e vídeo",
+          diaryTakeaway: "Diário privado com sincronização em nuvem.",
+          download: "Baixar",
+          promoOverlay: "Mantenha sua história privada, estilosa e sempre por perto.",
+          userStoriesEyebrow: "Histórias de usuários",
+          reviewsTitle: "Centenas de milhares de pessoas usam Diary with Lock todos os dias, e é assim que elas se sentem ao usar.",
+          review1Title: "Um reset privado depois de um dia longo",
+          review1Body: "Uso antes de dormir para soltar pensamentos que não quero misturar com conversas de trabalho ou notas soltas. O código faz parecer um espaço realmente meu.",
+          review2Title: "Melhor do que guardar sentimentos em notas espalhadas",
+          review2Body: "Eu queria algo mais suave e pessoal do que um app de notas comum. Os temas, as fontes e a linha do tempo simples me fazem voltar toda noite.",
+          review3Title: "A nuvem foi o que me fez continuar",
+          review3Body: "Comecei no celular e adorei ver que minhas entradas me acompanhavam em outros dispositivos. Isso transformou o app em algo em que realmente confio para memórias diárias.",
+          review4Title: "Simples o bastante para manter o hábito",
+          review4Body: "A maioria dos apps de journaling me perde em uma semana. Este mantém tudo fácil, privado e limpo para registrar o que aconteceu e como eu me senti.",
+          countryUSA: "Estados Unidos",
+          countryKorea: "Coreia",
+          countryGermany: "Alemanha",
+          countryNorway: "Noruega"
+        },
+        ru: {
+          pageTitle: "Diary with lock - приватный дневник для iPhone",
+          metaDescription: "Diary with lock — это приватное приложение-дневник и заметки для iPhone с защитой паролем, персональными темами и облачной синхронизацией между устройствами.",
+          themeToggleDark: "Тёмная",
+          themeToggleLight: "Светлая",
+          themeAriaToDark: "Переключить на тёмную тему",
+          themeAriaToLight: "Переключить на светлую тему",
+          languageLabel: "Язык",
+          heroEyebrow: "Главный акцент",
+          heroTitle: '<span class="product-accent">Diary with lock</span> красиво защищает ваши личные мысли.',
+          heroLede: "Яркое приложение для дневника, журнала и заметок, где можно хранить события дня, секреты, чувства и воспоминания под личным кодом.",
+          ctaUseNow: "Использовать сейчас",
+          newFeature: "Новая функция",
+          cloudSyncTitle: "Облачная синхронизация",
+          cloudSyncBody: "Синхронизируйте все дневники между устройствами через облако.",
+          featureStyleTitle: "Личный стиль",
+          featureStyleBody: "Настраивайте цвета и шрифты для каждого дневника.",
+          featureLockTitle: "Защита паролем",
+          featureLockBody: "Защитите личные заметки своим кодом.",
+          moreAppsEyebrow: "Другие приложения",
+          moreAppsTitle: "Ещё приложения от разработчика",
+          viewAll: "Смотреть всё",
+          categoryLifestyle: "Образ жизни",
+          categoryPhotoVideo: "Фото и видео",
+          diaryTakeaway: "Личный дневник с облачной синхронизацией.",
+          download: "Скачать",
+          promoOverlay: "Пусть ваша история остаётся личной, стильной и всегда под рукой.",
+          userStoriesEyebrow: "Истории пользователей",
+          reviewsTitle: "Сотни тысяч людей пользуются Diary with Lock каждый день, и вот как они это ощущают.",
+          review1Title: "Личное перезагружение после долгого дня",
+          review1Body: "Я использую его перед сном, чтобы выгрузить мысли и не смешивать их с рабочими чатами или обычными заметками. Код доступа делает это пространство по-настоящему моим.",
+          review2Title: "Лучше, чем хранить чувства в разбросанных заметках",
+          review2Body: "Мне хотелось чего-то мягче и личнее, чем обычное приложение для заметок. Темы, шрифты и простая лента времени заставляют меня возвращаться каждый вечер.",
+          review3Title: "Облачная синхронизация помогла остаться",
+          review3Body: "Я начала пользоваться на телефоне и сразу оценила, что записи доступны и на других устройствах. Так приложение стало моим надёжным местом для ежедневных воспоминаний.",
+          review4Title: "Достаточно просто, чтобы привычка сохранилась",
+          review4Body: "Большинство приложений для дневника я бросаю через неделю. Это остаётся простым, приватным и удобным для записи того, что произошло и что я чувствовала.",
+          countryUSA: "США",
+          countryKorea: "Корея",
+          countryGermany: "Германия",
+          countryNorway: "Норвегия"
+        },
+        ur: {
+          pageTitle: "Diary with lock - آئی فون کے لیے نجی ڈائری ایپ",
+          metaDescription: "Diary with lock آئی فون کے لیے ایک نجی ڈائری، جرنل اور نوٹس ایپ ہے جس میں پاس ورڈ سیکیورٹی، ذاتی تھیمز اور ڈیوائسز کے درمیان کلاؤڈ سنک شامل ہے۔",
+          themeToggleDark: "ڈارک",
+          themeToggleLight: "لائٹ",
+          themeAriaToDark: "ڈارک موڈ پر جائیں",
+          themeAriaToLight: "لائٹ موڈ پر جائیں",
+          languageLabel: "زبان",
+          heroEyebrow: "نمایاں پروڈکٹ",
+          heroTitle: '<span class="product-accent">Diary with lock</span> آپ کے نجی خیالات کو خوبصورتی سے محفوظ رکھتا ہے۔',
+          heroLede: "ایک رنگین ڈائری، جرنل اور نوٹس ایپ جو روزمرہ کے واقعات، راز، احساسات اور یادوں کو ذاتی پاس کوڈ کے پیچھے محفوظ رکھتی ہے۔",
+          ctaUseNow: "ابھی استعمال کریں",
+          newFeature: "نیا فیچر",
+          cloudSyncTitle: "کلاؤڈ سنک",
+          cloudSyncBody: "کلاؤڈ کے ذریعے اپنی تمام ڈائریاں ہر ڈیوائس پر سنک کریں۔",
+          featureStyleTitle: "ذاتی انداز",
+          featureStyleBody: "ہر ڈائری کے لیے رنگ اور فونٹس حسب منشا بنائیں۔",
+          featureLockTitle: "پاس ورڈ لاک",
+          featureLockBody: "اپنے نجی نوٹس کو ذاتی پاس کوڈ سے محفوظ رکھیں۔",
+          moreAppsEyebrow: "مزید ایپس",
+          moreAppsTitle: "ڈیولپر کی مزید ایپس",
+          viewAll: "سب دیکھیں",
+          categoryLifestyle: "طرزِ زندگی",
+          categoryPhotoVideo: "تصویر اور ویڈیو",
+          diaryTakeaway: "کلاؤڈ سنک کے ساتھ نجی جرنل۔",
+          download: "ڈاؤن لوڈ",
+          promoOverlay: "اپنی کہانی کو نجی، خوبصورت اور ہمیشہ قریب رکھیں۔",
+          userStoriesEyebrow: "صارفین کی کہانیاں",
+          reviewsTitle: "روزانہ سینکڑوں ہزار لوگ Diary with Lock استعمال کرتے ہیں، اور یہ ان کے احساسات ہیں۔",
+          review1Title: "لمبے دن کے بعد ایک نجی سکون",
+          review1Body: "میں اسے سونے سے پہلے استعمال کرتی ہوں تاکہ اپنے خیالات کو کام کی چیٹ یا عام نوٹس سے الگ رکھ سکوں۔ پاس کوڈ لاک اسے واقعی میرا ذاتی مقام بناتا ہے۔",
+          review2Title: "بکھرے ہوئے نوٹس میں جذبات رکھنے سے بہتر",
+          review2Body: "مجھے عام نوٹس ایپ سے زیادہ نرم اور ذاتی چیز چاہیے تھی۔ اس کے تھیمز، فونٹس اور سادہ ٹائم لائن مجھے ہر رات واپس لکھنے پر آمادہ کرتے ہیں۔",
+          review3Title: "کلاؤڈ سنک نے عادت پکی کر دی",
+          review3Body: "میں نے فون پر شروع کیا اور اچھا لگا کہ میری تحریریں دوسرے ڈیوائسز پر بھی مل جاتی ہیں۔ اس نے اسے روزمرہ یادوں کے لیے ایک قابلِ اعتماد جگہ بنا دیا۔",
+          review4Title: "اتنا سادہ کہ عادت قائم رہے",
+          review4Body: "زیادہ تر جرنلنگ ایپس میں ایک ہفتے بعد دلچسپی ختم ہو جاتی ہے۔ یہ ایپ آسان، نجی اور صاف جگہ دیتی ہے جہاں میں دن اور اپنے احساسات لکھ سکتی ہوں۔",
+          countryUSA: "امریکہ",
+          countryKorea: "کوریا",
+          countryGermany: "جرمنی",
+          countryNorway: "ناروے"
+        },
+        vi: {
+          pageTitle: "Diary with lock - Ứng dụng nhật ký riêng tư cho iPhone",
+          metaDescription: "Diary with lock là ứng dụng nhật ký, ghi chú và lưu cảm xúc riêng tư cho iPhone với khóa mật khẩu, giao diện cá nhân hóa và đồng bộ đám mây giữa các thiết bị.",
+          themeToggleDark: "Tối",
+          themeToggleLight: "Sáng",
+          themeAriaToDark: "Chuyển sang chế độ tối",
+          themeAriaToLight: "Chuyển sang chế độ sáng",
+          languageLabel: "Ngôn ngữ",
+          heroEyebrow: "Ứng dụng nổi bật",
+          heroTitle: '<span class="product-accent">Diary with lock</span> giúp bảo vệ những suy nghĩ riêng tư của bạn một cách thật đẹp.',
+          heroLede: "Một ứng dụng nhật ký, ghi chú và lưu cảm xúc đầy màu sắc để ghi lại sự kiện hằng ngày, bí mật, tâm trạng và kỷ niệm sau lớp mật mã cá nhân.",
+          ctaUseNow: "Dùng ngay",
+          newFeature: "Tính năng mới",
+          cloudSyncTitle: "Đồng bộ đám mây",
+          cloudSyncBody: "Đồng bộ toàn bộ nhật ký trên mọi thiết bị bằng cloud.",
+          featureStyleTitle: "Cá nhân hóa",
+          featureStyleBody: "Tùy chỉnh màu sắc và phông chữ cho từng cuốn nhật ký.",
+          featureLockTitle: "Khóa mật khẩu",
+          featureLockBody: "Bảo vệ ghi chú riêng tư bằng mật mã cá nhân.",
+          moreAppsEyebrow: "Ứng dụng khác",
+          moreAppsTitle: "Thêm ứng dụng từ nhà phát triển",
+          viewAll: "Xem tất cả",
+          categoryLifestyle: "Lối sống",
+          categoryPhotoVideo: "Ảnh và video",
+          diaryTakeaway: "Nhật ký riêng tư có đồng bộ cloud.",
+          download: "Tải xuống",
+          promoOverlay: "Giữ câu chuyện của bạn luôn riêng tư, có gu và luôn trong tầm tay.",
+          userStoriesEyebrow: "Cảm nhận người dùng",
+          reviewsTitle: "Có hàng trăm nghìn người đang dùng Diary with Lock mỗi ngày và cảm nhận của họ khi sử dụng.",
+          review1Title: "Một khoảng riêng để xả hết sau ngày dài",
+          review1Body: "Mình dùng app trước khi ngủ để trút hết suy nghĩ mà không muốn lẫn vào chat công việc hay note linh tinh. Khóa mật khẩu khiến nó thực sự là không gian riêng của mình.",
+          review2Title: "Tốt hơn nhiều so với việc giữ cảm xúc trong các note rời rạc",
+          review2Body: "Mình muốn một nơi mềm mại và riêng tư hơn app ghi chú thông thường. Theme, font và timeline đơn giản khiến mình tối nào cũng muốn quay lại viết.",
+          review3Title: "Cloud sync là thứ khiến mình gắn bó lâu dài",
+          review3Body: "Ban đầu mình dùng trên điện thoại, rồi thích luôn vì nội dung theo mình sang cả thiết bị khác. Nó biến app từ chỗ ghi cho vui thành nơi lưu ký ức hằng ngày mình thật sự tin tưởng.",
+          review4Title: "Đủ đơn giản để duy trì thói quen mỗi ngày",
+          review4Body: "Nhiều app journaling làm mình bỏ sau một tuần. App này ít ma sát, riêng tư và đủ gọn gàng để mình ghi lại ngày hôm đó đã xảy ra gì và mình cảm thấy thế nào.",
+          countryUSA: "Hoa Kỳ",
+          countryKorea: "Hàn Quốc",
+          countryGermany: "Đức",
+          countryNorway: "Na Uy"
+        }
+      };
+
+      const applyTranslations = (language) => {
+        const copy = translations[language] || translations.en;
+        document.documentElement.lang = language;
+        document.documentElement.dir = ["ar", "ur"].includes(language) ? "rtl" : "ltr";
+        document.title = copy.pageTitle;
+        descriptionMeta.setAttribute("content", copy.metaDescription);
+        ogTitleMeta.setAttribute("content", copy.pageTitle);
+        ogDescriptionMeta.setAttribute("content", copy.metaDescription);
+        twitterTitleMeta.setAttribute("content", copy.pageTitle);
+        twitterDescriptionMeta.setAttribute("content", copy.metaDescription);
+        languageSelect.setAttribute("aria-label", copy.languageLabel);
+
+        document.querySelectorAll("[data-i18n]").forEach((node) => {
+          const key = node.dataset.i18n;
+          if (copy[key]) {
+            node.textContent = copy[key];
+          }
+        });
+
+        document.querySelectorAll("[data-i18n-html]").forEach((node) => {
+          const key = node.dataset.i18nHtml;
+          if (copy[key]) {
+            node.innerHTML = copy[key];
+          }
+        });
+
+        const isDark = document.documentElement.dataset.theme === "dark";
+        themeToggle.setAttribute("aria-label", isDark ? copy.themeAriaToLight : copy.themeAriaToDark);
+        themeToggleText.textContent = isDark ? copy.themeToggleLight : copy.themeToggleDark;
+      };
 
       const applyTheme = (theme) => {
         const isDark = theme === "dark";
         document.documentElement.dataset.theme = theme;
         themeToggle.setAttribute("aria-pressed", String(isDark));
-        themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
-        themeToggleText.textContent = isDark ? "Light" : "Dark";
+        const copy = translations[languageSelect.value] || translations.en;
+        themeToggle.setAttribute("aria-label", isDark ? copy.themeAriaToLight : copy.themeAriaToDark);
+        themeToggleText.textContent = isDark ? copy.themeToggleLight : copy.themeToggleDark;
         themeColor.setAttribute("content", isDark ? "#171524" : "#ff3f87");
       };
 
+      languageSelect.value = translations[savedLanguage] ? savedLanguage : "en";
+      applyTranslations(languageSelect.value);
       applyTheme(initialTheme);
+
+      languageSelect.addEventListener("change", () => {
+        localStorage.setItem("language", languageSelect.value);
+        applyTranslations(languageSelect.value);
+        applyTheme(document.documentElement.dataset.theme || "light");
+      });
 
       themeToggle.addEventListener("click", () => {
         const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
