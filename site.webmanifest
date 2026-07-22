@@ -34,6 +34,32 @@
           "type": "image/png"
         }
       ]
+    },
+    {
+      "name": "Diary FAQ",
+      "short_name": "FAQ",
+      "description": "Read questions and answers about Diary with lock.",
+      "url": "/faq",
+      "icons": [
+        {
+          "src": "/assets/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Cloud Sync Guide",
+      "short_name": "Cloud Sync",
+      "description": "Learn why cloud sync matters in Diary with lock.",
+      "url": "/cloud-sync-diary",
+      "icons": [
+        {
+          "src": "/assets/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
     }
   ]
 }

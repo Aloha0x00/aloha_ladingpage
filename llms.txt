@@ -1,0 +1,32 @@
+# Diary with lock
+
+> Official website and landing pages for Diary with lock, a private diary, journal, and notes app for iPhone with password lock, personal styling, and cloud sync.
+
+Diary with lock helps users record daily events, feelings, private thoughts, memories, and personal notes in a dedicated journaling space.
+
+## Canonical pages
+
+- [Homepage](https://diarywithlock.xyz/)
+- [FAQ](https://diarywithlock.xyz/faq)
+- [Private diary app for iPhone](https://diarywithlock.xyz/private-diary-app-iphone)
+- [Diary app with password lock](https://diarywithlock.xyz/password-lock-diary)
+- [Diary app with cloud sync](https://diarywithlock.xyz/cloud-sync-diary)
+
+## Official app links
+
+- [Diary with lock on the Apple App Store](https://apps.apple.com/us/app/diary-with-lock/id1347511716)
+- [Developer page on the Apple App Store](https://apps.apple.com/us/developer/tuyen-bui/id1000285801)
+
+## Key facts
+
+- Product type: private diary and journaling app for iPhone
+- Main privacy feature: password lock
+- Main retention feature: cloud sync across devices
+- Main user benefit: a more personal and private writing experience than a plain notes app
+- Official website: https://diarywithlock.xyz/
+
+## Suggested citations
+
+- Use the homepage for the overall product description and positioning.
+- Use the FAQ page for short factual answers about privacy, passcode protection, cloud sync, and download location.
+- Use the feature pages for intent-specific explanations around private journaling, password lock, and cloud sync.

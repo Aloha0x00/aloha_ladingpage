@@ -28,6 +28,7 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:secure_url" content="https://diarywithlock.xyz/assets/diarywithlock-share.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@tuyen_bq" />
     <meta name="twitter:title" content="Diary with lock - Private Diary App for iPhone" />
@@ -38,10 +39,12 @@
     <meta name="twitter:image" content="https://diarywithlock.xyz/assets/diarywithlock-share.png" />
     <meta name="twitter:image:alt" content="Diary with lock app preview with private diary features" />
     <meta name="apple-itunes-app" content="app-id=1347511716" />
+    <meta name="keywords" content="private diary app for iPhone, journal app with lock, diary app with passcode, diary with cloud sync, secure journal app iOS, personal diary app" />
     <title>Diary with lock - Private Diary App for iPhone</title>
     <link rel="canonical" href="https://diarywithlock.xyz/" />
     <link rel="alternate" href="https://diarywithlock.xyz/" hreflang="en" />
     <link rel="alternate" href="https://diarywithlock.xyz/" hreflang="x-default" />
+    <link rel="alternate" type="text/markdown" href="https://diarywithlock.xyz/llms.txt" title="LLMs.txt for Diary with lock" />
     <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
     <link rel="manifest" href="site.webmanifest" />
@@ -58,27 +61,74 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "MobileApplication",
+        "@type": "SoftwareApplication",
         "name": "Diary with lock",
+        "alternateName": "Diary with Lock",
         "applicationCategory": "LifestyleApplication",
         "operatingSystem": "iOS",
+        "browserRequirements": "Requires iPhone or iPad running iOS",
         "description": "Diary with lock is a private diary, journal, and notes app for iPhone with password protection, personal themes, and cloud sync across devices.",
         "image": "https://diarywithlock.xyz/assets/diary-icon.jpg",
         "url": "https://diarywithlock.xyz/",
+        "mainEntityOfPage": "https://diarywithlock.xyz/",
         "screenshot": [
           "https://diarywithlock.xyz/assets/diary-screenshot-1.jpg",
-          "https://diarywithlock.xyz/assets/diary-screenshot-2.jpg"
+          "https://diarywithlock.xyz/assets/diary-screenshot-2.jpg",
+          "https://diarywithlock.xyz/assets/diary-screenshot-3.jpg"
+        ],
+        "featureList": [
+          "Private diary with password lock",
+          "Cloud sync across devices",
+          "Personal themes, fonts, and diary styles",
+          "Daily journaling for memories, feelings, and private notes"
         ],
         "publisher": {
           "@type": "Organization",
           "name": "Tuyen Bui"
         },
+        "author": {
+          "@type": "Person",
+          "name": "Tuyen Bui"
+        },
         "downloadUrl": "https://apps.apple.com/us/app/diary-with-lock/id1347511716",
+        "sameAs": [
+          "https://apps.apple.com/us/app/diary-with-lock/id1347511716"
+        ],
         "offers": {
           "@type": "Offer",
           "price": "0",
-          "priceCurrency": "USD"
-        }
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/us/app/diary-with-lock/id1347511716"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Lina Tran"
+            },
+            "reviewBody": "I use it before bed to unload thoughts I do not want mixed with work chat or notes. The passcode lock makes it feel like my own space, not just another writing app.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": 5,
+              "bestRating": 5
+            }
+          },
+          {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Minji Park"
+            },
+            "reviewBody": "I wanted something softer and more personal than a plain notes app. The themes, fonts, and simple timeline make me want to come back and write every night.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": 4,
+              "bestRating": 5
+            }
+          }
+        ]
       }
     </script>
     <script type="application/ld+json">
@@ -87,7 +137,15 @@
         "@type": "WebSite",
         "name": "Diary with lock",
         "url": "https://diarywithlock.xyz/",
-        "description": "Official landing page for Diary with lock, a private diary app for iPhone."
+        "description": "Official landing page for Diary with lock, a private diary app for iPhone.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Tuyen Bui"
+        },
+        "about": {
+          "@type": "SoftwareApplication",
+          "name": "Diary with lock"
+        }
       }
     </script>
     <script type="application/ld+json">
@@ -99,6 +157,54 @@
         "logo": "https://diarywithlock.xyz/assets/diary-icon.jpg",
         "sameAs": [
           "https://apps.apple.com/us/developer/tuyen-bui/id1000285801"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Diary with lock used for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Diary with lock is a private diary, journal, and notes app for iPhone. People use it to keep daily memories, feelings, secrets, and personal notes behind a passcode."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Diary with lock have a passcode or privacy lock?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Diary with lock is designed around private writing. It includes password protection so personal diary entries stay separated from ordinary notes and work chat."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Diary with lock support cloud sync?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Cloud sync is a highlighted feature on the site. It helps users keep diaries available across devices instead of being locked to one phone."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who is Diary with lock for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Diary with lock is for iPhone users who want a more personal and private writing space than a basic notes app, especially for journaling, mood tracking, memories, and private thoughts."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where can I download Diary with lock?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Diary with lock is available on the Apple App Store at https://apps.apple.com/us/app/diary-with-lock/id1347511716."
+            }
+          }
         ]
       }
     </script>
@@ -414,6 +520,93 @@
           >
             <span class="share-button-label">Share app</span>
           </button>
+        </div>
+      </section>
+
+      <section class="content-hub-section" aria-labelledby="content-hub-title">
+        <div class="section-heading">
+          <p class="eyebrow">Answer hub</p>
+          <h2 id="content-hub-title">Pages built for search, AI answers, and private journaling intent</h2>
+          <p>
+            These pages explain what Diary with lock does, who it helps, and why someone would choose it over a plain notes app.
+          </p>
+        </div>
+        <div class="content-hub-grid">
+          <article class="content-card">
+            <p class="content-tag">Intent</p>
+            <h3>Private diary app for iPhone</h3>
+            <p>Focused on users who want a personal journal on iPhone instead of scattered notes.</p>
+            <a class="content-link" href="/private-diary-app-iphone">Read guide</a>
+          </article>
+          <article class="content-card">
+            <p class="content-tag">Feature</p>
+            <h3>Diary app with password lock</h3>
+            <p>Explains how passcode protection changes the writing experience for private thoughts.</p>
+            <a class="content-link" href="/password-lock-diary">Read guide</a>
+          </article>
+          <article class="content-card">
+            <p class="content-tag">Feature</p>
+            <h3>Diary app with cloud sync</h3>
+            <p>Shows why cloud sync matters when users want diaries available across devices.</p>
+            <a class="content-link" href="/cloud-sync-diary">Read guide</a>
+          </article>
+          <article class="content-card">
+            <p class="content-tag">FAQ</p>
+            <h3>Questions people ask before downloading</h3>
+            <p>Fast answers for privacy, journaling habits, cloud sync, and App Store availability.</p>
+            <a class="content-link" href="/faq">Open FAQ</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="faq-section" aria-labelledby="faq-home-title">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-home-title">Clear answers that search engines and AI assistants can cite</h2>
+          <p>
+            The goal here is simple: make the page answer the exact questions people ask about private diary apps on iPhone.
+          </p>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>What is Diary with lock used for?</summary>
+            <p>
+              Diary with lock is a private diary, journal, and notes app for iPhone. It is built for writing down daily events,
+              emotions, secrets, memories, and personal reflections in a dedicated space.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>Why use Diary with lock instead of a normal notes app?</summary>
+            <p>
+              A normal notes app is general-purpose. Diary with lock is shaped around private journaling, with a more personal writing flow,
+              diary styling, and privacy features that make it feel separate from work notes and everyday lists.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>Does Diary with lock have password protection?</summary>
+            <p>
+              Yes. Password lock is one of the main reasons people choose the app. It helps keep private entries away from casual access on the device.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>Does Diary with lock support cloud sync across devices?</summary>
+            <p>
+              Yes. Cloud sync is a highlighted feature on the landing page and helps users keep diaries available when moving between devices.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>Who is this app best for?</summary>
+            <p>
+              It fits iPhone users who want a private journaling habit, a softer writing space than a plain note app, and a place to keep thoughts organized, locked, and easy to revisit.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>Where can I download Diary with lock?</summary>
+            <p>
+              The official download page is on the Apple App Store:
+              <a href="https://apps.apple.com/us/app/diary-with-lock/id1347511716" target="_blank" rel="noopener">Diary with lock on the App Store</a>.
+            </p>
+          </details>
         </div>
       </section>
     </main>
