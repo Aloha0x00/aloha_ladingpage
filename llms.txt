@@ -6,11 +6,11 @@ Diary with lock helps users record daily events, feelings, private thoughts, mem
 
 ## Canonical pages
 
-- [Homepage](https://diarywithlock.xyz/)
-- [FAQ](https://diarywithlock.xyz/faq)
-- [Private diary app for iPhone](https://diarywithlock.xyz/private-diary-app-iphone)
-- [Diary app with password lock](https://diarywithlock.xyz/password-lock-diary)
-- [Diary app with cloud sync](https://diarywithlock.xyz/cloud-sync-diary)
+- [Homepage](https://www.diarywithlock.xyz/)
+- [FAQ](https://www.diarywithlock.xyz/faq)
+- [Private diary app for iPhone](https://www.diarywithlock.xyz/private-diary-app-iphone)
+- [Diary app with password lock](https://www.diarywithlock.xyz/password-lock-diary)
+- [Diary app with cloud sync](https://www.diarywithlock.xyz/cloud-sync-diary)
 
 ## Official app links
 
@@ -23,7 +23,7 @@ Diary with lock helps users record daily events, feelings, private thoughts, mem
 - Main privacy feature: password lock
 - Main retention feature: cloud sync across devices
 - Main user benefit: a more personal and private writing experience than a plain notes app
-- Official website: https://diarywithlock.xyz/
+- Official website: https://www.diarywithlock.xyz/
 
 ## Suggested citations
 
